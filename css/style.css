@@ -151,22 +151,37 @@
 
 
 /*** Hero Header ***/
+/* Update your hero-header and ensure the image does not rotate */
 .hero-header {
-    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../img/Kilimanjaro.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hero-header img {
-    animation: imgRotate 50s linear infinite;
+    /* This disables any 'infinite' rotation animations from the template */
+    animation: none !important; 
 }
 
-@keyframes imgRotate { 
-    100% { 
-        transform: rotate(360deg); 
-    } 
+/* Define a custom constant breathing/zoom animation */
+@keyframes constant-zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
+
+.hero-header img.constant-motion {
+    /* This makes the movement repeat forever */
+    animation: constant-zoom 6s ease-in-out infinite !important;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Slight shadow to make the building pop against the mountain */
+.hero-header img.constant-motion {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
