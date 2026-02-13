@@ -390,6 +390,19 @@
 
 
 /*** Testimonial ***/
+.testimonial-carousel .owl-item .testimonial-item {
+    /* New Fixes added here */
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    transition: .5s;
+}
+
+/* Ensure the text expands to push the author name to the bottom */
+.testimonial-item p {
+    flex: 1;
+}
+
 .testimonial-carousel .owl-item .testimonial-item,
 .testimonial-carousel .owl-item.center .testimonial-item * {
     transition: .5s;
