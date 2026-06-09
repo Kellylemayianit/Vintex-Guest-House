@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms & Services — Vintex Guest House</title>
+  <meta name="description" content="Browse our Standard Single, Double, and Twin rooms. Also enquire about event and conference facilities at Vintex Guest House, Kimana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══ NAVIGATION ══════════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-name">Vintex</span>
+        <span class="nav__brand-sub">Guest House · Kimana</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="services.html" class="nav__link active">Rooms &amp; Services</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li>
+          <a href="services.html" class="btn btn-primary" style="padding:0.6rem 1.2rem;">Book Now</a>
+        </li>
+        <li>
+          <button class="nav__cart" id="cartToggle" aria-label="View cart">
+            🛒
+            <span class="nav__cart-count" id="cartCount">0</span>
+          </button>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="services.html" class="nav__link active">Rooms &amp; Services</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="services.html" class="btn btn-primary" style="width:100%;text-align:center;margin-top:0.5rem;">Book Now</a>
+  </div>
+
+  <!-- ══ PAGE HERO ════════════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Accommodation &amp; Services</span>
+      <h1>Rooms Built for Rest</h1>
+      <p>Choose from three comfortable room types. Add to your cart, note any special requests, and send your booking enquiry directly via WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- ══ HOW IT WORKS ══════════════════════════════════════════ -->
+  <div style="background:var(--clr-mist);border-bottom:1px solid rgba(196,168,130,0.2);">
+    <div class="container" style="padding-block:1.5rem;">
+      <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:center;justify-content:center;">
+        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:var(--clr-soil);">
+          <span style="background:var(--clr-soil);color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;flex-shrink:0;">1</span>
+          Choose room type &amp; quantity
+        </div>
+        <span style="color:var(--clr-dust);">→</span>
+        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:var(--clr-soil);">
+          <span style="background:var(--clr-soil);color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;flex-shrink:0;">2</span>
+          Add to cart
+        </div>
+        <span style="color:var(--clr-dust);">→</span>
+        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:var(--clr-soil);">
+          <span style="background:var(--clr-soil);color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;flex-shrink:0;">3</span>
+          Review cart &amp; add special requests
+        </div>
+        <span style="color:var(--clr-dust);">→</span>
+        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:var(--clr-soil);">
+          <span style="background:var(--clr-gold);color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;flex-shrink:0;">4</span>
+          Send via WhatsApp ✓
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ ROOMS ════════════════════════════════════════════════ -->
+  <section class="section" id="rooms">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Our Rooms</span>
+        <h2>Select Your Room</h2>
+        <div class="divider"></div>
+        <p>All rooms include en-suite bathroom, free Wi-Fi, mosquito nets, and access to our garden terrace. Prices are per room per night.</p>
+      </div>
+
+      <!-- ── Standard Single ── -->
+      <article class="service-room-card" id="room-single" data-room-id="standard-single" data-room-name="Standard Single Room" data-room-price="2500">
+        <div class="service-room-card__image">
+          <div class="img-placeholder" role="img" aria-label="Standard Single Room — a clean, compact room with a single bed, white linen, and wooden furnishings">
+            <span class="ph-icon">🛏️</span>
+            <span class="ph-label">Standard Single Room<br><em style="font-size:0.75rem;opacity:0.7;">Photo coming soon</em></span>
+          </div>
+        </div>
+        <div class="service-room-card__body">
+          <span class="room-card__type">Sleeps 1 · Single Bed</span>
+          <h3 style="font-family:var(--font-display);font-size:1.8rem;color:var(--clr-soil);margin-bottom:0.5rem;">Standard Single</h3>
+          <p style="font-size:0.9rem;color:#6b5e52;margin-bottom:0.75rem;">
+            A well-appointed room designed for the solo traveller. Clean, quiet, and functional — everything you need after a day in Amboseli, nothing you don't.
+          </p>
+
+          <div class="room-features">
+            <div class="room-feature-item">Single Bed (3ft)</div>
+            <div class="room-feature-item">En-suite Shower</div>
+            <div class="room-feature-item">Free Wi-Fi</div>
+            <div class="room-feature-item">Writing Desk</div>
+            <div class="room-feature-item">Mosquito Net</div>
+            <div class="room-feature-item">Electric Fan</div>
+            <div class="room-feature-item">Towels &amp; Toiletries</div>
+            <div class="room-feature-item">Safe Power Sockets</div>
+          </div>
+
+          <div class="service-room-card__price-row">
+            <span class="service-room-card__price">KES 2,500</span>
+            <span class="service-room-card__per">/ room / night</span>
+          </div>
+
+          <div class="qty-control">
+            <span class="qty-control__label">Rooms:</span>
+            <button class="qty-btn" data-action="decrease" data-room-id="standard-single" aria-label="Decrease quantity">−</button>
+            <span class="qty-value" id="qty-standard-single">1</span>
+            <button class="qty-btn" data-action="increase" data-room-id="standard-single" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button class="btn-add-cart" data-room-id="standard-single" id="btn-standard-single">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- ── Standard Double ── -->
+      <article class="service-room-card" id="room-double" data-room-id="standard-double" data-room-name="Standard Double Room" data-room-price="3500">
+        <div class="service-room-card__image">
+          <div class="img-placeholder" role="img" aria-label="Standard Double Room — spacious room with a queen-size double bed, soft lighting, and a garden-facing window">
+            <span class="ph-icon">🛌</span>
+            <span class="ph-label">Standard Double Room<br><em style="font-size:0.75rem;opacity:0.7;">Photo coming soon</em></span>
+          </div>
+        </div>
+        <div class="service-room-card__body">
+          <span class="room-card__type">Sleeps 2 · Double Bed</span>
+          <h3 style="font-family:var(--font-display);font-size:1.8rem;color:var(--clr-soil);margin-bottom:0.5rem;">Standard Double</h3>
+          <p style="font-size:0.9rem;color:#6b5e52;margin-bottom:0.75rem;">
+            Ideal for couples or the solo guest who loves space. A generous double bed, soft lighting, and a window that opens to our garden courtyard.
+          </p>
+
+          <div class="room-features">
+            <div class="room-feature-item">Double Bed (5ft)</div>
+            <div class="room-feature-item">En-suite Bath &amp; Shower</div>
+            <div class="room-feature-item">Free Wi-Fi</div>
+            <div class="room-feature-item">Wardrobe</div>
+            <div class="room-feature-item">Mosquito Net</div>
+            <div class="room-feature-item">Seating Area</div>
+            <div class="room-feature-item">Towels &amp; Toiletries</div>
+            <div class="room-feature-item">Garden View</div>
+          </div>
+
+          <div class="service-room-card__price-row">
+            <span class="service-room-card__price">KES 3,500</span>
+            <span class="service-room-card__per">/ room / night</span>
+          </div>
+
+          <div class="qty-control">
+            <span class="qty-control__label">Rooms:</span>
+            <button class="qty-btn" data-action="decrease" data-room-id="standard-double" aria-label="Decrease quantity">−</button>
+            <span class="qty-value" id="qty-standard-double">1</span>
+            <button class="qty-btn" data-action="increase" data-room-id="standard-double" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button class="btn-add-cart" data-room-id="standard-double" id="btn-standard-double">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- ── Standard Twin ── -->
+      <article class="service-room-card" id="room-twin" data-room-id="standard-twin" data-room-name="Standard Twin Room" data-room-price="3500">
+        <div class="service-room-card__image">
+          <div class="img-placeholder" role="img" aria-label="Standard Twin Room — bright room with two single beds separated by a bedside table, ideal for friends or colleagues">
+            <span class="ph-icon">🏠</span>
+            <span class="ph-label">Standard Twin Room<br><em style="font-size:0.75rem;opacity:0.7;">Photo coming soon</em></span>
+          </div>
+        </div>
+        <div class="service-room-card__body">
+          <span class="room-card__type">Sleeps 2 · Two Single Beds</span>
+          <h3 style="font-family:var(--font-display);font-size:1.8rem;color:var(--clr-soil);margin-bottom:0.5rem;">Standard Twin</h3>
+          <p style="font-size:0.9rem;color:#6b5e52;margin-bottom:0.75rem;">
+            Two separate single beds — great for friends travelling together, business colleagues, or a parent and child. Practical and comfortable in equal measure.
+          </p>
+
+          <div class="room-features">
+            <div class="room-feature-item">2 × Single Beds (3ft)</div>
+            <div class="room-feature-item">En-suite Bath &amp; Shower</div>
+            <div class="room-feature-item">Free Wi-Fi</div>
+            <div class="room-feature-item">Individual Wardrobes</div>
+            <div class="room-feature-item">Mosquito Nets</div>
+            <div class="room-feature-item">Electric Fans</div>
+            <div class="room-feature-item">Towels &amp; Toiletries</div>
+            <div class="room-feature-item">Full-length Mirror</div>
+          </div>
+
+          <div class="service-room-card__price-row">
+            <span class="service-room-card__price">KES 3,500</span>
+            <span class="service-room-card__per">/ room / night</span>
+          </div>
+
+          <div class="qty-control">
+            <span class="qty-control__label">Rooms:</span>
+            <button class="qty-btn" data-action="decrease" data-room-id="standard-twin" aria-label="Decrease quantity">−</button>
+            <span class="qty-value" id="qty-standard-twin">1</span>
+            <button class="qty-btn" data-action="increase" data-room-id="standard-twin" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button class="btn-add-cart" data-room-id="standard-twin" id="btn-standard-twin">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══ FLOATING CART SUMMARY BAR (mobile) ══════════════════ -->
+  <div class="cart-bar" id="cartBar" style="
+    display:none;
+    position:fixed;
+    bottom:0;left:0;right:0;
+    background:var(--clr-soil);
+    color:var(--clr-ivory);
+    padding:1rem 1.5rem;
+    z-index:800;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    box-shadow:0 -4px 20px rgba(0,0,0,0.2);
+  ">
+    <div>
+      <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--clr-dust);">Cart</div>
+      <div style="font-family:var(--font-display);font-size:1.2rem;" id="cartBarSummary">0 rooms</div>
+    </div>
+    <button id="cartBarOpen" class="btn btn-whatsapp" style="padding:0.7rem 1.4rem;font-size:0.8rem;white-space:nowrap;">
+      View Cart 🛒
+    </button>
+  </div>
+
+  <!-- ══ EVENTS & CONFERENCE ═══════════════════════════════════ -->
+  <section class="section section--alt" id="events">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Events &amp; Conferences</span>
+        <h2>Host Your Next Event With Us</h2>
+        <div class="divider"></div>
+        <p>From corporate retreats to private celebrations, our flexible event space accommodates your vision. Located away from city noise, our venue offers a unique setting that stimulates focus and creativity.</p>
+      </div>
+
+      <div class="grid-2" style="align-items:start;">
+        <!-- Event card 1 -->
+        <article class="event-card">
+          <div class="event-card__image">
+            <div class="img-placeholder" role="img" aria-label="Conference hall at Vintex — rows of chairs facing a projector screen, natural light from large windows">
+              <span class="ph-icon">🎤</span>
+              <span class="ph-label">Conference &amp; Meeting Room<br><em style="font-size:0.75rem;opacity:0.7;">Seats up to 40 guests</em></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <span class="eyebrow">Corporate</span>
+            <h3>Meetings &amp; Conferences</h3>
+            <p style="font-size:0.9rem;color:#6b5e52;margin-top:0.5rem;">
+              A dedicated conference room with projector, PA system, whiteboard, and reliable internet. Perfect for team retreats, NGO workshops, and training sessions.
+            </p>
+            <div class="event-card__features">
+              <span class="event-feature">Projector &amp; Screen</span>
+              <span class="event-feature">PA System</span>
+              <span class="event-feature">Wi-Fi</span>
+              <span class="event-feature">Whiteboard</span>
+              <span class="event-feature">Seats 40</span>
+              <span class="event-feature">Tea &amp; Lunch Packages</span>
+            </div>
+            <a href="https://wa.me/254700000000?text=Hello%20Vintex%2C%20I%20would%20like%20to%20enquire%20about%20your%20conference%20room." 
+               class="btn btn-whatsapp" 
+               target="_blank" rel="noopener"
+               style="margin-top:0.5rem;">
+              📲 Enquire on WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <!-- Event card 2 -->
+        <article class="event-card">
+          <div class="event-card__image">
+            <div class="img-placeholder" role="img" aria-label="Outdoor event space at Vintex — decorated with fairy lights and round tables set for a dinner under the stars">
+              <span class="ph-icon">🎉</span>
+              <span class="ph-label">Outdoor Event Space<br><em style="font-size:0.75rem;opacity:0.7;">Capacity up to 100 guests</em></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <span class="eyebrow">Private Celebrations</span>
+            <h3>Parties &amp; Celebrations</h3>
+            <p style="font-size:0.9rem;color:#6b5e52;margin-top:0.5rem;">
+              Our open-air grounds are available for private events — birthdays, weddings, graduation parties, and family gatherings. Catering available on request.
+            </p>
+            <div class="event-card__features">
+              <span class="event-feature">Outdoor Grounds</span>
+              <span class="event-feature">Catering Available</span>
+              <span class="event-feature">Sound System</span>
+              <span class="event-feature">Tent / Canopy</span>
+              <span class="event-feature">Up to 100 Guests</span>
+              <span class="event-feature">Custom Décor</span>
+            </div>
+            <a href="https://wa.me/254700000000?text=Hello%20Vintex%2C%20I%20would%20like%20to%20enquire%20about%20hosting%20an%20event%20at%20your%20venue." 
+               class="btn btn-whatsapp" 
+               target="_blank" rel="noopener"
+               style="margin-top:0.5rem;">
+              📲 Enquire on WhatsApp
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Event CTA note -->
+      <div style="
+        background:var(--clr-ivory);
+        border:1px solid rgba(196,168,130,0.4);
+        border-radius:var(--radius-lg);
+        padding:1.5rem 2rem;
+        margin-top:2.5rem;
+        display:flex;
+        gap:1rem;
+        align-items:flex-start;
+        flex-wrap:wrap;
+      ">
+        <span style="font-size:1.5rem;flex-shrink:0;">💡</span>
+        <div>
+          <strong style="font-size:0.9rem;color:var(--clr-soil);">Planning an event?</strong>
+          <p style="font-size:0.85rem;margin-top:0.25rem;">
+            For group bookings of 5+ rooms alongside an event, we offer bundled pricing. Reach out on WhatsApp or via our <a href="contact.html" style="color:var(--clr-gold);text-decoration:underline;">contact form</a> for a custom quote.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Vintex</div>
+          <div class="footer__tagline">Guest House · Kimana</div>
+          <p>Your gateway to Amboseli. Comfort, warmth, and wild beauty — all in one place.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Rooms &amp; Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Book a Room</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Reach Us</h4>
+          <ul class="footer__info">
+            <li><span class="icon">📍</span><span>Kimana Town, Kajiado County, Kenya</span></li>
+            <li><span class="icon">📞</span><span>+254 700 000 000</span></li>
+            <li><span class="icon">✉️</span><span>info@vintexguesthouse.co.ke</span></li>
+            <li><span class="icon">🕐</span><span>Check-in 12pm · Check-out 10am</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Vintex Guest House. All rights reserved.</span>
+        <span>Kimana, Kajiado · Kenya</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254700000000" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="fab-whatsapp__pulse"></span>
+    💬
+  </a>
+
+  <!-- Cart Panel -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Booking cart">
+    <div class="cart-panel__header">
+      <h3 class="cart-panel__title">Your Selection</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-panel__body">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty__icon">🛏️</div>
+        <p>No rooms selected yet.<br>Choose a room above to begin.</p>
+      </div>
+      <ul id="cartItemsList"></ul>
+      <div class="cart-notes" id="cartNotesSection" style="display:none;">
+        <label for="cartNotesInput">Customized Requests (meals / room arrangements)</label>
+        <textarea id="cartNotesInput" placeholder="e.g. Breakfast for 2, extra pillows, early check-in at 10am, ground floor room…"></textarea>
+      </div>
+    </div>
+    <div class="cart-panel__footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span class="cart-total__label">Estimated Total</span>
+        <span class="cart-total__amount" id="cartTotalDisplay">KES 0</span>
+      </div>
+      <button class="btn btn-whatsapp" id="checkoutWhatsApp" style="width:100%;justify-content:center;">
+        📲 Send Enquiry via WhatsApp
+      </button>
+      <p class="cart-disclaimer">Prices are per room per night. Final confirmation by our team.</p>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+  <script src="whatsapp.js"></script>
+  <script>
+    // Show/hide sticky cart bar on mobile when cart has items
+    function updateCartBar() {
+      const bar = document.getElementById('cartBar');
+      const summary = document.getElementById('cartBarSummary');
+      if (!bar || !summary) return;
+      const totalQty = window.VintexCart ? window.VintexCart.getTotalQty() : 0;
+      if (totalQty > 0) {
+        bar.style.display = 'flex';
+        summary.textContent = totalQty + ' room' + (totalQty !== 1 ? 's' : '') + ' selected';
+      } else {
+        bar.style.display = 'none';
+      }
+    }
+    document.addEventListener('vintex:cartUpdated', updateCartBar);
+    document.getElementById('cartBarOpen')?.addEventListener('click', () => {
+      document.getElementById('cartPanel')?.classList.add('open');
+      document.getElementById('cartOverlay')?.classList.add('open');
+    });
+  </script>
+</body>
+</html>

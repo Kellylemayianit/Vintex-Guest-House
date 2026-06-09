@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintex Guest House — Kimana, Kenya</title>
+  <meta name="description" content="Boutique guest house nestled near Amboseli, Kimana. Comfortable rooms, warm hospitality, and unforgettable views of Kilimanjaro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══ NAVIGATION ══════════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-name">Vintex</span>
+        <span class="nav__brand-sub">Guest House · Kimana</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="services.html" class="nav__link">Rooms &amp; Services</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li>
+          <a href="services.html" class="btn btn-primary" style="padding:0.6rem 1.2rem;">Book Now</a>
+        </li>
+        <li>
+          <button class="nav__cart" id="cartToggle" aria-label="View cart">
+            🛒
+            <span class="nav__cart-count" id="cartCount">0</span>
+          </button>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="index.html" class="nav__link active">Home</a>
+    <a href="services.html" class="nav__link">Rooms &amp; Services</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="services.html" class="btn btn-primary" style="width:100%;text-align:center;margin-top:0.5rem;">Book Now</a>
+  </div>
+
+  <!-- ══ HERO ════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__content">
+      <span class="eyebrow">Kimana, Kenya · Est. 2018</span>
+      <h1 class="hero__title">
+        Rest Under<br><em>Kilimanjaro's</em><br>Shadow
+      </h1>
+      <p class="hero__desc">
+        A boutique retreat in the heart of Kimana, where the savanna meets comfort. Wake up to birdsong, dine under open skies, and explore the gateway to Amboseli.
+      </p>
+      <div class="hero__cta">
+        <a href="services.html" class="btn btn-primary">Browse Rooms</a>
+        <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="img-placeholder" style="height:100%;min-height:500px;">
+        <span class="ph-icon">🏔️</span>
+        <span class="ph-label">Aerial view of Vintex Guest House<br>with Kilimanjaro backdrop</span>
+      </div>
+      <div class="hero__badge">
+        <span class="hero__badge-icon">🦁</span>
+        <div class="hero__badge-text">
+          <strong>Amboseli Access</strong>
+          <span>15 min from park gate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FEATURES STRIP ══════════════════════════════════════ -->
+  <div class="features-strip">
+    <div class="container">
+      <div class="features-strip__grid">
+        <div class="feature-item">
+          <div class="feature-item__icon">🛏️</div>
+          <div class="feature-item__label">Comfortable Rooms</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">🍽️</div>
+          <div class="feature-item__label">Local Cuisine</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">📶</div>
+          <div class="feature-item__label">Free Wi-Fi</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">🚿</div>
+          <div class="feature-item__label">En-suite Bathrooms</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">🔒</div>
+          <div class="feature-item__label">24/7 Security</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">🚐</div>
+          <div class="feature-item__label">Safari Transfers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ ABOUT ════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;gap:4rem;">
+        <div class="intro__text">
+          <span class="eyebrow">Our Story</span>
+          <h2>A Home at the Edge of the Wild</h2>
+          <div class="divider"></div>
+          <p>
+            Vintex Guest House was born from a simple belief — that travellers deserve a calm, clean, and genuinely welcoming place to rest after a day of adventure. Located in Kimana town, we are perfectly positioned as your base for Amboseli National Park, Chyulu Hills, and the greater Tsavo corridor.
+          </p>
+          <p>
+            Every room is thoughtfully furnished, every meal made with local ingredients, and every guest treated like family. We pride ourselves on personal service, honest value, and the kind of warmth that keeps guests coming back.
+          </p>
+          <div class="intro__stat-grid">
+            <div class="stat-box">
+              <div class="stat-box__num">6<span>+</span></div>
+              <div class="stat-box__label">Years of Service</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-box__num">3</div>
+              <div class="stat-box__label">Room Categories</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-box__num">★<span>4.8</span></div>
+              <div class="stat-box__label">Guest Rating</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-box__num">15<span>km</span></div>
+              <div class="stat-box__label">To Amboseli Gate</div>
+            </div>
+          </div>
+        </div>
+        <div class="intro__image">
+          <div class="img-placeholder" style="height:500px;border-radius:12px;">
+            <span class="ph-icon">🌅</span>
+            <span class="ph-label">Vintex Guest House entrance &amp; garden at sunset</span>
+          </div>
+          <div class="intro__image-accent">
+            <div class="img-placeholder" style="height:100%;">
+              <span class="ph-icon" style="font-size:1.2rem;">☕</span>
+              <span class="ph-label" style="font-size:0.7rem;">Breakfast terrace</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ROOMS PREVIEW ════════════════════════════════════════ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="rooms-preview__header">
+        <span class="eyebrow">Accommodation</span>
+        <h2>Choose Your Room</h2>
+        <div class="divider divider--center"></div>
+        <p>Three thoughtfully appointed room types, each offering clean comfort at honest value.</p>
+      </div>
+      <div class="grid-3">
+        <!-- Standard Single -->
+        <article class="room-card">
+          <div class="room-card__image">
+            <div class="img-placeholder" alt="Standard Single Room at Vintex Guest House">
+              <span class="ph-icon">🛏️</span>
+              <span class="ph-label">Standard Single Room</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <span class="room-card__type">Sleeps 1</span>
+            <h3 class="room-card__name">Standard Single</h3>
+            <p class="room-card__desc">Intimate and efficiently designed for solo travellers. A comfortable single bed, work desk, and en-suite shower.</p>
+            <div class="amenity-tags">
+              <span class="amenity-tag">En-suite Shower</span>
+              <span class="amenity-tag">Wi-Fi</span>
+              <span class="amenity-tag">Work Desk</span>
+              <span class="amenity-tag">Mosquito Net</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">
+                <span class="room-card__price-amount">KES 2,500</span>
+                <span class="room-card__price-note">per night / per room</span>
+              </div>
+              <a href="services.html" class="btn btn-outline" style="padding:0.55rem 1rem;font-size:0.72rem;">Select</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Standard Double -->
+        <article class="room-card">
+          <div class="room-card__image">
+            <div class="img-placeholder" alt="Standard Double Room at Vintex Guest House">
+              <span class="ph-icon">🛌</span>
+              <span class="ph-label">Standard Double Room</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <span class="room-card__type">Sleeps 2</span>
+            <h3 class="room-card__name">Standard Double</h3>
+            <p class="room-card__desc">Spacious double bed ideal for couples or a single traveller who enjoys extra space. Views of the courtyard garden.</p>
+            <div class="amenity-tags">
+              <span class="amenity-tag">Double Bed</span>
+              <span class="amenity-tag">En-suite Bath</span>
+              <span class="amenity-tag">Wi-Fi</span>
+              <span class="amenity-tag">Wardrobe</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">
+                <span class="room-card__price-amount">KES 3,500</span>
+                <span class="room-card__price-note">per night / per room</span>
+              </div>
+              <a href="services.html" class="btn btn-outline" style="padding:0.55rem 1rem;font-size:0.72rem;">Select</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Standard Twin -->
+        <article class="room-card">
+          <div class="room-card__image">
+            <div class="img-placeholder" alt="Standard Twin Room at Vintex Guest House">
+              <span class="ph-icon">🏠</span>
+              <span class="ph-label">Standard Twin Room</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <span class="room-card__type">Sleeps 2</span>
+            <h3 class="room-card__name">Standard Twin</h3>
+            <p class="room-card__desc">Two separate single beds — perfect for friends, colleagues, or families with a child. Flexible and practical.</p>
+            <div class="amenity-tags">
+              <span class="amenity-tag">2 Single Beds</span>
+              <span class="amenity-tag">En-suite Bath</span>
+              <span class="amenity-tag">Wi-Fi</span>
+              <span class="amenity-tag">Fans</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">
+                <span class="room-card__price-amount">KES 3,500</span>
+                <span class="room-card__price-note">per night / per room</span>
+              </div>
+              <a href="services.html" class="btn btn-outline" style="padding:0.55rem 1rem;font-size:0.72rem;">Select</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="services.html" class="btn btn-primary">View All Rooms &amp; Book</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA BANNER ═══════════════════════════════════════════ -->
+  <section class="section" style="background:var(--clr-soil);text-align:center;">
+    <div class="container" style="max-width:640px;">
+      <span class="eyebrow" style="color:var(--clr-dust);">Easy Booking</span>
+      <h2 style="color:var(--clr-ivory);">Book via WhatsApp in 60 Seconds</h2>
+      <div class="divider divider--center"></div>
+      <p style="color:var(--clr-savanna);margin-bottom:2rem;">
+        No forms, no waiting. Select your rooms, add any requests, and send your enquiry directly to our team on WhatsApp. We confirm within the hour.
+      </p>
+      <a href="services.html" class="btn btn-whatsapp" style="font-size:1rem;padding:1rem 2.5rem;">
+        📱 Start Booking
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Vintex</div>
+          <div class="footer__tagline">Guest House · Kimana</div>
+          <p>Your gateway to Amboseli. Comfort, warmth, and wild beauty — all in one place.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Rooms &amp; Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Book a Room</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Reach Us</h4>
+          <ul class="footer__info">
+            <li><span class="icon">📍</span><span>Kimana Town, Kajiado County, Kenya</span></li>
+            <li><span class="icon">📞</span><span>+254 700 000 000</span></li>
+            <li><span class="icon">✉️</span><span>info@vintexguesthouse.co.ke</span></li>
+            <li><span class="icon">🕐</span><span>Check-in 12pm · Check-out 10am</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Vintex Guest House. All rights reserved.</span>
+        <span>Kimana, Kajiado · Kenya</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254700000000" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="fab-whatsapp__pulse"></span>
+    💬
+  </a>
+
+  <!-- Cart Panel (shared) -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Booking cart">
+    <div class="cart-panel__header">
+      <h3 class="cart-panel__title">Your Selection</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-panel__body">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty__icon">🛏️</div>
+        <p>No rooms selected yet.<br>Browse rooms to begin.</p>
+      </div>
+      <ul id="cartItemsList"></ul>
+      <div class="cart-notes" id="cartNotesSection" style="display:none;">
+        <label for="cartNotesInput">Customized Requests (meals / room arrangements)</label>
+        <textarea id="cartNotesInput" placeholder="e.g. Breakfast for 2, extra pillows, early check-in at 10am…"></textarea>
+      </div>
+    </div>
+    <div class="cart-panel__footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span class="cart-total__label">Estimated Total</span>
+        <span class="cart-total__amount" id="cartTotalDisplay">KES 0</span>
+      </div>
+      <button class="btn btn-whatsapp" id="checkoutWhatsApp" style="width:100%;justify-content:center;">
+        📲 Send Enquiry via WhatsApp
+      </button>
+      <p class="cart-disclaimer">Prices are per room per night. Final confirmation by our team.</p>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+  <script src="whatsapp.js"></script>
+</body>
+</html>
